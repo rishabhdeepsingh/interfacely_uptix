@@ -6,6 +6,11 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: LoginForm());
+    return Center(
+      child: Container(
+        decoration: BoxDecoration(color: Theme.of(context).backgroundColor),
+        child: const LoginForm(),
+      ),
+    );
   }
 }

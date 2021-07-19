@@ -8,6 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:interfacely/l10n/l10n.dart';
+import 'package:interfacely/uptix/constants.dart';
 import 'package:interfacely/uptix/view/uptix.dart';
 
 class App extends StatelessWidget {
@@ -19,7 +20,13 @@ class App extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "Roobert",
         accentColor: const Color(0xFF13B9FF),
+        primaryColor: const Color(0xFFFAFF00),
+        backgroundColor: const Color(0xFF232323),
         appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
+        inputDecorationTheme: InputDecorationTheme(
+          hintStyle: TextStyle(color: Text_Color),
+          labelStyle: TextStyle(color: Text_Color),
+        ),
       ),
       localizationsDelegates: const [
         AppLocalizations.delegate,
